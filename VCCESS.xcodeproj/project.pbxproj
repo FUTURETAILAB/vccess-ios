@@ -16,7 +16,16 @@
 		A31A14E3231E0BDC004C6DAE /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31A14E2231E0BDC004C6DAE /* Registration.storyboard */; };
 		A31A14E6231E0D4A004C6DAE /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14E5231E0D4A004C6DAE /* IntroViewController.swift */; };
 		A31A14E8231E12BB004C6DAE /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14E7231E12BB004C6DAE /* SignUpTableViewController.swift */; };
-		A31A14EA231E12C6004C6DAE /* SignInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14E9231E12C6004C6DAE /* SignInTableViewController.swift */; };
+		A31A14EA231E12C6004C6DAE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14E9231E12C6004C6DAE /* SignInViewController.swift */; };
+		A351A0C1232EEF52002F811A /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351A0B9232EEF52002F811A /* ImageService.swift */; };
+		A351A0C2232EEF52002F811A /* ActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351A0BA232EEF52002F811A /* ActivityManager.swift */; };
+		A351A0C3232EEF52002F811A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351A0BB232EEF52002F811A /* Network.swift */; };
+		A351A0C4232EEF52002F811A /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351A0BC232EEF52002F811A /* KeychainWrapper.swift */; };
+		A351A0C5232EEF52002F811A /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351A0BD232EEF52002F811A /* UIImage+Utils.swift */; };
+		A351A0C6232EEF52002F811A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351A0BE232EEF52002F811A /* Utils.swift */; };
+		A351A0C7232EEF52002F811A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351A0BF232EEF52002F811A /* Configuration.swift */; };
+		A351A0C8232EEF52002F811A /* UIFont+Traits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351A0C0232EEF52002F811A /* UIFont+Traits.swift */; };
+		A351A0CA232EEFDD002F811A /* LinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351A0C9232EEFDD002F811A /* LinkViewController.swift */; };
 		A3758A4723235BE100BE84F4 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3758A4623235BE100BE84F4 /* PhoneNumberViewController.swift */; };
 		A3758A492323648200BE84F4 /* VCCESSCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3758A482323648200BE84F4 /* VCCESSCodeViewController.swift */; };
 		A3758A4B23236AB400BE84F4 /* AllowNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3758A4A23236AB400BE84F4 /* AllowNotificationsViewController.swift */; };
@@ -36,7 +45,16 @@
 		A31A14E2231E0BDC004C6DAE /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		A31A14E5231E0D4A004C6DAE /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		A31A14E7231E12BB004C6DAE /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
-		A31A14E9231E12C6004C6DAE /* SignInTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTableViewController.swift; sourceTree = "<group>"; };
+		A31A14E9231E12C6004C6DAE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		A351A0B9232EEF52002F811A /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		A351A0BA232EEF52002F811A /* ActivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityManager.swift; sourceTree = "<group>"; };
+		A351A0BB232EEF52002F811A /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		A351A0BC232EEF52002F811A /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		A351A0BD232EEF52002F811A /* UIImage+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
+		A351A0BE232EEF52002F811A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A351A0BF232EEF52002F811A /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		A351A0C0232EEF52002F811A /* UIFont+Traits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Traits.swift"; sourceTree = "<group>"; };
+		A351A0C9232EEFDD002F811A /* LinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkViewController.swift; sourceTree = "<group>"; };
 		A3758A4623235BE100BE84F4 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 		A3758A482323648200BE84F4 /* VCCESSCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCCESSCodeViewController.swift; sourceTree = "<group>"; };
 		A3758A4A23236AB400BE84F4 /* AllowNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowNotificationsViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +92,7 @@
 		A31A14CC231E09BE004C6DAE /* VCCESS */ = {
 			isa = PBXGroup;
 			children = (
+				A351A0B8232EEF52002F811A /* Utils */,
 				A31A14E1231E0BBC004C6DAE /* Resources */,
 				A31A14E4231E0D34004C6DAE /* UI */,
 				A31A14CD231E09BE004C6DAE /* AppDelegate.swift */,
@@ -100,14 +119,30 @@
 			children = (
 				A3758A4E232371F800BE84F4 /* Extensions */,
 				A31A14E5231E0D4A004C6DAE /* IntroViewController.swift */,
-				A31A14E9231E12C6004C6DAE /* SignInTableViewController.swift */,
+				A31A14E9231E12C6004C6DAE /* SignInViewController.swift */,
 				A31A14E7231E12BB004C6DAE /* SignUpTableViewController.swift */,
 				A3758A4623235BE100BE84F4 /* PhoneNumberViewController.swift */,
+				A351A0C9232EEFDD002F811A /* LinkViewController.swift */,
 				A3758A482323648200BE84F4 /* VCCESSCodeViewController.swift */,
 				A3758A4A23236AB400BE84F4 /* AllowNotificationsViewController.swift */,
 				A3758A4C23236C6B00BE84F4 /* SetupWalletViewController.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		A351A0B8232EEF52002F811A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A351A0B9232EEF52002F811A /* ImageService.swift */,
+				A351A0BA232EEF52002F811A /* ActivityManager.swift */,
+				A351A0BB232EEF52002F811A /* Network.swift */,
+				A351A0BC232EEF52002F811A /* KeychainWrapper.swift */,
+				A351A0BD232EEF52002F811A /* UIImage+Utils.swift */,
+				A351A0BE232EEF52002F811A /* Utils.swift */,
+				A351A0BF232EEF52002F811A /* Configuration.swift */,
+				A351A0C0232EEF52002F811A /* UIFont+Traits.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		A3758A4E232371F800BE84F4 /* Extensions */ = {
@@ -195,11 +230,20 @@
 				A31A14D2231E09BE004C6DAE /* ViewController.swift in Sources */,
 				A3758A492323648200BE84F4 /* VCCESSCodeViewController.swift in Sources */,
 				A3758A4D23236C6B00BE84F4 /* SetupWalletViewController.swift in Sources */,
+				A351A0C1232EEF52002F811A /* ImageService.swift in Sources */,
 				A31A14CE231E09BE004C6DAE /* AppDelegate.swift in Sources */,
 				A31A14D0231E09BE004C6DAE /* SceneDelegate.swift in Sources */,
 				A3758A4723235BE100BE84F4 /* PhoneNumberViewController.swift in Sources */,
+				A351A0C6232EEF52002F811A /* Utils.swift in Sources */,
+				A351A0C4232EEF52002F811A /* KeychainWrapper.swift in Sources */,
 				A31A14E6231E0D4A004C6DAE /* IntroViewController.swift in Sources */,
-				A31A14EA231E12C6004C6DAE /* SignInTableViewController.swift in Sources */,
+				A351A0CA232EEFDD002F811A /* LinkViewController.swift in Sources */,
+				A351A0C8232EEF52002F811A /* UIFont+Traits.swift in Sources */,
+				A351A0C7232EEF52002F811A /* Configuration.swift in Sources */,
+				A351A0C5232EEF52002F811A /* UIImage+Utils.swift in Sources */,
+				A351A0C2232EEF52002F811A /* ActivityManager.swift in Sources */,
+				A31A14EA231E12C6004C6DAE /* SignInViewController.swift in Sources */,
+				A351A0C3232EEF52002F811A /* Network.swift in Sources */,
 				A3758A4B23236AB400BE84F4 /* AllowNotificationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
