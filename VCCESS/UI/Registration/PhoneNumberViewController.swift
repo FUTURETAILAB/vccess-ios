@@ -30,4 +30,8 @@ class PhoneNumberViewController: UIViewController
         self.performSegue(withIdentifier: "sgCode", sender: nil)
     }
     
+    @IBAction func login(sender: UIBarButtonItem)
+    {
+        self.performSegue(withIdentifier: "sgLogin", sender: nil)
+    }
 }

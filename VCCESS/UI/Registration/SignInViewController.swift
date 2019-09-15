@@ -59,6 +59,22 @@ class SignInViewController: UIViewController
         sender.isSelected = !sender.isSelected
     }
     
+    @IBAction func back(sender: UIBarButtonItem)
+    {
+        if let nav = self.navigationController
+        {
+            nav.popViewController(animated: true)
+        }
+    }
+    
+    @IBAction func register(sender: UIBarButtonItem)
+    {
+        if let nav = self.navigationController
+        {
+            nav.popToRootViewController(animated: true)
+        }
+    }
+
 }
 
 extension SignInViewController: UITextFieldDelegate

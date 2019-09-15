@@ -117,17 +117,25 @@
 		A31A14E4231E0D34004C6DAE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A34AA5B1232F03820014B65B /* Registration */,
 				A3758A4E232371F800BE84F4 /* Extensions */,
-				A31A14E5231E0D4A004C6DAE /* IntroViewController.swift */,
-				A31A14E9231E12C6004C6DAE /* SignInViewController.swift */,
-				A31A14E7231E12BB004C6DAE /* SignUpTableViewController.swift */,
-				A3758A4623235BE100BE84F4 /* PhoneNumberViewController.swift */,
-				A351A0C9232EEFDD002F811A /* LinkViewController.swift */,
-				A3758A482323648200BE84F4 /* VCCESSCodeViewController.swift */,
 				A3758A4A23236AB400BE84F4 /* AllowNotificationsViewController.swift */,
-				A3758A4C23236C6B00BE84F4 /* SetupWalletViewController.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		A34AA5B1232F03820014B65B /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				A31A14E5231E0D4A004C6DAE /* IntroViewController.swift */,
+				A351A0C9232EEFDD002F811A /* LinkViewController.swift */,
+				A3758A4623235BE100BE84F4 /* PhoneNumberViewController.swift */,
+				A3758A4C23236C6B00BE84F4 /* SetupWalletViewController.swift */,
+				A31A14E9231E12C6004C6DAE /* SignInViewController.swift */,
+				A31A14E7231E12BB004C6DAE /* SignUpTableViewController.swift */,
+				A3758A482323648200BE84F4 /* VCCESSCodeViewController.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		A351A0B8232EEF52002F811A /* Utils */ = {
