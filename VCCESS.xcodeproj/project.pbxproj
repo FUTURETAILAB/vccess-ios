@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A31042DD232F269B009CA971 /* ProfileCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31042DC232F269B009CA971 /* ProfileCollectionViewController.swift */; };
+		A31042E1232F2A61009CA971 /* Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31042E0232F2A61009CA971 /* Push.swift */; };
 		A31A14CE231E09BE004C6DAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14CD231E09BE004C6DAE /* AppDelegate.swift */; };
 		A31A14D0231E09BE004C6DAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14CF231E09BE004C6DAE /* SceneDelegate.swift */; };
 		A31A14D2231E09BE004C6DAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14D1231E09BE004C6DAE /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		A31042DC232F269B009CA971 /* ProfileCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewController.swift; sourceTree = "<group>"; };
+		A31042E0232F2A61009CA971 /* Push.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Push.swift; sourceTree = "<group>"; };
 		A31A14CA231E09BE004C6DAE /* VCCESS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCCESS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31A14CD231E09BE004C6DAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A31A14CF231E09BE004C6DAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		A3A52500232F13EB00E6992C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A31042E0232F2A61009CA971 /* Push.swift */,
 				A3A52501232F13EB00E6992C /* User.swift */,
 			);
 			path = Model;
@@ -283,6 +286,7 @@
 				A3A52502232F13EB00E6992C /* User.swift in Sources */,
 				A351A0C6232EEF52002F811A /* Utils.swift in Sources */,
 				A351A0C4232EEF52002F811A /* KeychainWrapper.swift in Sources */,
+				A31042E1232F2A61009CA971 /* Push.swift in Sources */,
 				A31A14E6231E0D4A004C6DAE /* IntroViewController.swift in Sources */,
 				A351A0CA232EEFDD002F811A /* LinkViewController.swift in Sources */,
 				A351A0C8232EEF52002F811A /* UIFont+Traits.swift in Sources */,

@@ -18,6 +18,13 @@ class AllowNotificationsViewController: UIViewController
 
         btnAllow.layer.borderWidth = 1
         btnAllow.layer.borderColor = UIColor.white.cgColor
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.pushRequestComplete(sender:)), name: NSNotification.Name(rawValue: Push.PushRequestComplete), object: nil)
+    }
+    
+    deinit
+    {
+        NotificationCenter.default.removeObserver(self)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle
@@ -26,10 +33,21 @@ class AllowNotificationsViewController: UIViewController
     }
     
     @IBAction func skip(sender: UIBarButtonItem)
-    {}
-    
-    @IBAction func allow(sender: UIButton)
     {
         self.performSegue(withIdentifier: "sgWallet", sender: nil)
     }
+    
+    @IBAction func allow(sender: UIButton)
+    {
+        Push.shared.register()
+    }
+    
+    @objc func pushRequestComplete(sender: Notification?)
+    {
+        DispatchQueue.main.async
+        {
+            self.performSegue(withIdentifier: "sgWallet", sender: nil)
+        }
+    }
+    
 }
