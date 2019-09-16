@@ -51,7 +51,37 @@ class SignInViewController: UIViewController
 
     @IBAction func signIn(sender: UIButton)
     {
-        self.performSegue(withIdentifier: "sgNotifications", sender: nil)
+        guard let email = txtEmail.text
+            , let password = txtPassword.text
+            else
+        {
+            Utils.displayMessage(title: nil, message: "Email and Password required", viewController: self)
+            return()
+        }
+        
+        ActivityManager.shared.incrementActivityCount()
+
+        User.shared.login(email: email, password: password, completion:
+        {
+            error in
+        
+            ActivityManager.shared.decrementActivityCount()
+            
+            if let error = error
+            {
+                Utils.displayMessage(title: nil, message: error.localizedDescription, viewController: self)
+                return()
+            }
+            
+            if let nav = self.navigationController
+                , let presenting = nav.presentingViewController
+            {
+                DispatchQueue.main.async
+                {
+                    presenting.dismiss(animated: true, completion: nil)
+                }
+            }
+        })
     }
     
     @IBAction func rememberMe(sender: UIButton)

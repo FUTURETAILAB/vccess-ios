@@ -71,7 +71,6 @@
         <!--COLLECTION FEED-->
         <scene sceneID="3aO-CB-NTh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rC2-v4-C29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="qEM-4L-QYC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="egE-6Z-kPg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -82,13 +81,14 @@
                     <tabBarItem key="tabBarItem" title="" image="ShopIconOff" selectedImage="ShopIconOn" id="yFq-i3-wqc"/>
                     <navigationItem key="navigationItem" title="COLLECTION FEED" id="fX3-co-8UC"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rC2-v4-C29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1777" y="-1973"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar View Controller-->
         <scene sceneID="sWq-hS-OZn">
             <objects>
-                <tabBarController id="xmA-Hs-7Kd" sceneMemberID="viewController">
+                <tabBarController id="xmA-Hs-7Kd" customClass="MainTabBarViewController" customModule="VCCESS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jvg-sw-ydu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -99,47 +99,24 @@
                         <segue destination="Dm9-ix-Md2" kind="relationship" relationship="viewControllers" id="WML-c3-Ij7"/>
                         <segue destination="oKE-A8-qGb" kind="relationship" relationship="viewControllers" id="xEx-eZ-ZCx"/>
                         <segue destination="M97-jT-HIH" kind="relationship" relationship="viewControllers" id="MVk-Vj-wrh"/>
-                        <segue destination="fCQ-Xo-vbv" kind="relationship" relationship="viewControllers" id="tuW-jd-UvP"/>
-                        <segue destination="Lmp-hd-DQR" kind="presentation" identifier="sgRegister" modalPresentationStyle="fullScreen" id="aUi-1f-OZ8"/>
+                        <segue destination="Lmp-hd-DQR" kind="presentation" identifier="sgRegister" animates="NO" modalPresentationStyle="fullScreen" id="aUi-1f-OZ8"/>
+                        <segue destination="Lmp-hd-DQR" kind="presentation" identifier="sgRegisterAnimated" modalPresentationStyle="fullScreen" id="08N-1j-WiK"/>
+                        <segue destination="wVp-46-5Qi" kind="relationship" relationship="viewControllers" id="2xp-cu-Mbl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TT1-38-7on" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1086" y="-372"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="kJI-nE-dTM">
+        <!--vwProfile-->
+        <scene sceneID="qfA-Cl-ssM">
             <objects>
-                <viewController id="Tsu-33-wVz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xN4-hs-KOV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="iVi-Yz-JAW"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Sqy-jL-6PJ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qjh-ls-GOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="vwProfile" id="wVp-46-5Qi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Q4s-bY-qLz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7M-6W-V67" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1510" y="1270"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="0Ge-fn-95C">
-            <objects>
-                <navigationController id="fCQ-Xo-vbv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="UserIconOff" id="B0V-Tk-QAc"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Ec-Wl-hof">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Tsu-33-wVz" kind="relationship" relationship="rootViewController" id="jJ7-ab-dFG"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KCi-ci-kWT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1509" y="550"/>
+            <point key="canvasLocation" x="-1086" y="246"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jix-jb-Osn">
@@ -218,7 +195,9 @@
         <image name="DiscoverIconOn" width="21" height="20"/>
         <image name="ShopIconOff" width="20" height="20"/>
         <image name="ShopIconOn" width="20" height="20"/>
-        <image name="UserIconOff" width="21" height="20"/>
         <image name="VCCESSOff" width="24" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="08N-1j-WiK"/>
+    </inferredMetricsTieBreakers>
 </document>

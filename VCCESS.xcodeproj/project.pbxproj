@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31042DD232F269B009CA971 /* ProfileCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31042DC232F269B009CA971 /* ProfileCollectionViewController.swift */; };
 		A31A14CE231E09BE004C6DAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14CD231E09BE004C6DAE /* AppDelegate.swift */; };
 		A31A14D0231E09BE004C6DAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14CF231E09BE004C6DAE /* SceneDelegate.swift */; };
 		A31A14D2231E09BE004C6DAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14D1231E09BE004C6DAE /* ViewController.swift */; };
@@ -33,9 +34,11 @@
 		A3758A502323720D00BE84F4 /* UINavigationController+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3758A4F2323720D00BE84F4 /* UINavigationController+StatusBar.swift */; };
 		A3A524FE232F138800E6992C /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A524FD232F138800E6992C /* MainTabBarViewController.swift */; };
 		A3A52502232F13EB00E6992C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A52501232F13EB00E6992C /* User.swift */; };
+		A3A52505232F254700E6992C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A52504232F254700E6992C /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A31042DC232F269B009CA971 /* ProfileCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewController.swift; sourceTree = "<group>"; };
 		A31A14CA231E09BE004C6DAE /* VCCESS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCCESS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31A14CD231E09BE004C6DAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A31A14CF231E09BE004C6DAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		A3758A4F2323720D00BE84F4 /* UINavigationController+StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+StatusBar.swift"; sourceTree = "<group>"; };
 		A3A524FD232F138800E6992C /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		A3A52501232F13EB00E6992C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A3A52504232F254700E6992C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 				A31A14D6231E09C0004C6DAE /* Assets.xcassets */,
 				A31A14D8231E09C0004C6DAE /* LaunchScreen.storyboard */,
 				A31A14D3231E09BE004C6DAE /* Main.storyboard */,
+				A3A52504232F254700E6992C /* Profile.storyboard */,
 				A31A14E2231E0BDC004C6DAE /* Registration.storyboard */,
 			);
 			path = Resources;
@@ -124,8 +129,9 @@
 			children = (
 				A3A524FD232F138800E6992C /* MainTabBarViewController.swift */,
 				A3A524FF232F139600E6992C /* Bak */,
-				A34AA5B1232F03820014B65B /* Registration */,
 				A3758A4E232371F800BE84F4 /* Extensions */,
+				A3A52503232F24E800E6992C /* Profile */,
+				A34AA5B1232F03820014B65B /* Registration */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -181,6 +187,14 @@
 				A3A52501232F13EB00E6992C /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A3A52503232F24E800E6992C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A31042DC232F269B009CA971 /* ProfileCollectionViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +257,7 @@
 			files = (
 				A31A14DA231E09C0004C6DAE /* LaunchScreen.storyboard in Resources */,
 				A31A14E3231E0BDC004C6DAE /* Registration.storyboard in Resources */,
+				A3A52505232F254700E6992C /* Profile.storyboard in Resources */,
 				A31A14D7231E09C0004C6DAE /* Assets.xcassets in Resources */,
 				A31A14D5231E09BE004C6DAE /* Main.storyboard in Resources */,
 			);
@@ -272,6 +287,7 @@
 				A351A0CA232EEFDD002F811A /* LinkViewController.swift in Sources */,
 				A351A0C8232EEF52002F811A /* UIFont+Traits.swift in Sources */,
 				A351A0C7232EEF52002F811A /* Configuration.swift in Sources */,
+				A31042DD232F269B009CA971 /* ProfileCollectionViewController.swift in Sources */,
 				A351A0C5232EEF52002F811A /* UIImage+Utils.swift in Sources */,
 				A351A0C2232EEF52002F811A /* ActivityManager.swift in Sources */,
 				A31A14EA231E12C6004C6DAE /* SignInViewController.swift in Sources */,
