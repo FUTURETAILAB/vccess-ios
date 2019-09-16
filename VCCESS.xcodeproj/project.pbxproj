@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A31042DD232F269B009CA971 /* ProfileCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31042DC232F269B009CA971 /* ProfileCollectionViewController.swift */; };
 		A31042E1232F2A61009CA971 /* Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31042E0232F2A61009CA971 /* Push.swift */; };
+		A31042E3232F2F34009CA971 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31042E2232F2F34009CA971 /* Wallet.storyboard */; };
+		A31042E6232F3030009CA971 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31042E5232F3030009CA971 /* WalletViewController.swift */; };
 		A31A14CE231E09BE004C6DAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14CD231E09BE004C6DAE /* AppDelegate.swift */; };
 		A31A14D0231E09BE004C6DAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14CF231E09BE004C6DAE /* SceneDelegate.swift */; };
 		A31A14D2231E09BE004C6DAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14D1231E09BE004C6DAE /* ViewController.swift */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		A31042DC232F269B009CA971 /* ProfileCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewController.swift; sourceTree = "<group>"; };
 		A31042E0232F2A61009CA971 /* Push.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Push.swift; sourceTree = "<group>"; };
+		A31042E2232F2F34009CA971 /* Wallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
+		A31042E5232F3030009CA971 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		A31A14CA231E09BE004C6DAE /* VCCESS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCCESS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31A14CD231E09BE004C6DAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A31A14CF231E09BE004C6DAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A31042E4232F3000009CA971 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				A31042E5232F3030009CA971 /* WalletViewController.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
 		A31A14C1231E09BE004C6DAE = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +134,7 @@
 				A31A14D3231E09BE004C6DAE /* Main.storyboard */,
 				A3A52504232F254700E6992C /* Profile.storyboard */,
 				A31A14E2231E0BDC004C6DAE /* Registration.storyboard */,
+				A31042E2232F2F34009CA971 /* Wallet.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -129,6 +142,7 @@
 		A31A14E4231E0D34004C6DAE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A31042E4232F3000009CA971 /* Wallet */,
 				A3A524FD232F138800E6992C /* MainTabBarViewController.swift */,
 				A3A524FF232F139600E6992C /* Bak */,
 				A3758A4E232371F800BE84F4 /* Extensions */,
@@ -263,6 +277,7 @@
 				A3A52505232F254700E6992C /* Profile.storyboard in Resources */,
 				A31A14D7231E09C0004C6DAE /* Assets.xcassets in Resources */,
 				A31A14D5231E09BE004C6DAE /* Main.storyboard in Resources */,
+				A31042E3232F2F34009CA971 /* Wallet.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +297,7 @@
 				A351A0C1232EEF52002F811A /* ImageService.swift in Sources */,
 				A31A14CE231E09BE004C6DAE /* AppDelegate.swift in Sources */,
 				A31A14D0231E09BE004C6DAE /* SceneDelegate.swift in Sources */,
+				A31042E6232F3030009CA971 /* WalletViewController.swift in Sources */,
 				A3758A4723235BE100BE84F4 /* PhoneNumberViewController.swift in Sources */,
 				A3A52502232F13EB00E6992C /* User.swift in Sources */,
 				A351A0C6232EEF52002F811A /* Utils.swift in Sources */,

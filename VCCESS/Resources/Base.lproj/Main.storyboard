@@ -48,7 +48,7 @@
                 <viewControllerPlaceholder storyboardName="Registration" referencedIdentifier="regStart" id="Lmp-hd-DQR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwT-u8-8fV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2707" y="-644"/>
+            <point key="canvasLocation" x="-2231" y="-123"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WUu-ef-8Tw">
@@ -102,11 +102,20 @@
                         <segue destination="Lmp-hd-DQR" kind="presentation" identifier="sgRegister" animates="NO" modalPresentationStyle="fullScreen" id="aUi-1f-OZ8"/>
                         <segue destination="Lmp-hd-DQR" kind="presentation" identifier="sgRegisterAnimated" modalPresentationStyle="fullScreen" id="08N-1j-WiK"/>
                         <segue destination="wVp-46-5Qi" kind="relationship" relationship="viewControllers" id="2xp-cu-Mbl"/>
+                        <segue destination="m5y-kQ-zfG" kind="presentation" identifier="sgWallet" modalPresentationStyle="fullScreen" id="oTn-ss-9tm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TT1-38-7on" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1086" y="-372"/>
+        </scene>
+        <!--vwWallet-->
+        <scene sceneID="DC4-uA-xa7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Wallet" referencedIdentifier="vwWallet" id="m5y-kQ-zfG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFW-wZ-vM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2230" y="-20"/>
         </scene>
         <!--vwProfile-->
         <scene sceneID="qfA-Cl-ssM">
@@ -198,6 +207,6 @@
         <image name="VCCESSOff" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="08N-1j-WiK"/>
+        <segue reference="aUi-1f-OZ8"/>
     </inferredMetricsTieBreakers>
 </document>
