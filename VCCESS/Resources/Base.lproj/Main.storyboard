@@ -7,6 +7,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="kFi-zj-sbL">
+            <objects>
+                <navigationController id="Dm9-ix-Md2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="DiscoverIconOff" selectedImage="DiscoverIconOn" id="AJN-i8-j2h"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mZR-wk-kci">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vby-Hn-JQb" kind="relationship" relationship="rootViewController" id="5bn-S6-85R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fS-lR-yjY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-54" y="-1388"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="BZA-iD-3MS">
             <objects>
@@ -18,14 +36,42 @@
                         <viewLayoutGuide key="safeArea" id="CCJ-fh-izq"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="DiscoverIconOff" selectedImage="DiscoverIconOn" id="dYI-2M-epn"/>
+                    <navigationItem key="navigationItem" id="CNN-5w-fd5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3m-2s-wsA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-614" y="-1037"/>
+            <point key="canvasLocation" x="880" y="-1388"/>
         </scene>
-        <!--View Controller-->
+        <!--regStart-->
+        <scene sceneID="wer-cf-i9L">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Registration" referencedIdentifier="regStart" id="Lmp-hd-DQR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwT-u8-8fV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2707" y="-644"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WUu-ef-8Tw">
+            <objects>
+                <navigationController id="Ezd-rT-ezZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="ShopIconOff" selectedImage="ShopIconOn" id="5SV-cZ-gjI"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Eb5-Mo-Z5R">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qEM-4L-QYC" kind="relationship" relationship="rootViewController" id="xzf-dl-Efa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LbL-TS-idc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1776" y="-1232"/>
+        </scene>
+        <!--COLLECTION FEED-->
         <scene sceneID="3aO-CB-NTh">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rC2-v4-C29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="qEM-4L-QYC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="egE-6Z-kPg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -34,10 +80,10 @@
                         <viewLayoutGuide key="safeArea" id="tSq-HL-9tC"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="ShopIconOff" selectedImage="ShopIconOn" id="yFq-i3-wqc"/>
+                    <navigationItem key="navigationItem" title="COLLECTION FEED" id="fX3-co-8UC"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rC2-v4-C29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1675" y="-1037"/>
+            <point key="canvasLocation" x="-1777" y="-1973"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sWq-hS-OZn">
@@ -49,16 +95,17 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="qEM-4L-QYC" kind="relationship" relationship="viewControllers" id="g8l-TY-lL7"/>
-                        <segue destination="Vby-Hn-JQb" kind="relationship" relationship="viewControllers" id="aDT-Ab-lTT"/>
-                        <segue destination="pxu-li-Pdg" kind="relationship" relationship="viewControllers" id="g3R-No-kMt"/>
-                        <segue destination="hGC-DU-sbd" kind="relationship" relationship="viewControllers" id="9b7-tr-4Wf"/>
-                        <segue destination="Tsu-33-wVz" kind="relationship" relationship="viewControllers" id="oro-DZ-g3Y"/>
+                        <segue destination="Ezd-rT-ezZ" kind="relationship" relationship="viewControllers" id="BDo-sC-98m"/>
+                        <segue destination="Dm9-ix-Md2" kind="relationship" relationship="viewControllers" id="WML-c3-Ij7"/>
+                        <segue destination="oKE-A8-qGb" kind="relationship" relationship="viewControllers" id="xEx-eZ-ZCx"/>
+                        <segue destination="M97-jT-HIH" kind="relationship" relationship="viewControllers" id="MVk-Vj-wrh"/>
+                        <segue destination="fCQ-Xo-vbv" kind="relationship" relationship="viewControllers" id="tuW-jd-UvP"/>
+                        <segue destination="Lmp-hd-DQR" kind="presentation" identifier="sgRegister" modalPresentationStyle="fullScreen" id="aUi-1f-OZ8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TT1-38-7on" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1136" y="-278"/>
+            <point key="canvasLocation" x="-1086" y="-372"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kJI-nE-dTM">
@@ -70,11 +117,47 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="iVi-Yz-JAW"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="UserIconOff" id="s2V-Vw-pO3"/>
+                    <navigationItem key="navigationItem" id="Sqy-jL-6PJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjh-ls-GOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1136" y="533"/>
+            <point key="canvasLocation" x="-1510" y="1270"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Ge-fn-95C">
+            <objects>
+                <navigationController id="fCQ-Xo-vbv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="UserIconOff" id="B0V-Tk-QAc"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Ec-Wl-hof">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Tsu-33-wVz" kind="relationship" relationship="rootViewController" id="jJ7-ab-dFG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCi-ci-kWT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1509" y="550"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jix-jb-Osn">
+            <objects>
+                <navigationController id="M97-jT-HIH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="CollectionIconOff" selectedImage="CollectionIconOn" id="mf6-RH-Zms"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xLy-83-Vgy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hGC-DU-sbd" kind="relationship" relationship="rootViewController" id="QUC-HR-Mif"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3S-bB-G9p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55" y="755"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KxW-vi-q26">
@@ -86,11 +169,29 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="upm-3r-LzL"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="CollectionIconOff" selectedImage="CollectionIconOn" id="Hrn-RP-a4B"/>
+                    <navigationItem key="navigationItem" id="mxf-7r-t27"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0lu-YJ-738" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="574" y="320"/>
+            <point key="canvasLocation" x="880" y="755"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pAl-bq-xnZ">
+            <objects>
+                <navigationController id="oKE-A8-qGb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="VCCESSOff" id="v7K-58-lj2"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vKm-8Z-uEc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pxu-li-Pdg" kind="relationship" relationship="rootViewController" id="Dyl-eM-nle"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBC-QN-7tQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55" y="-372"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kaf-qi-hHk">
@@ -103,10 +204,11 @@
                         <viewLayoutGuide key="safeArea" id="GrP-pN-u4p"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="VCCESSOff" id="lVP-hE-yd9"/>
+                    <navigationItem key="navigationItem" id="RtH-db-qNo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mR1-5s-WEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="574" y="-427"/>
+            <point key="canvasLocation" x="880" y="-372"/>
         </scene>
     </scenes>
     <resources>

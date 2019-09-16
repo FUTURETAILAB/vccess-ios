@@ -31,6 +31,8 @@
 		A3758A4B23236AB400BE84F4 /* AllowNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3758A4A23236AB400BE84F4 /* AllowNotificationsViewController.swift */; };
 		A3758A4D23236C6B00BE84F4 /* SetupWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3758A4C23236C6B00BE84F4 /* SetupWalletViewController.swift */; };
 		A3758A502323720D00BE84F4 /* UINavigationController+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3758A4F2323720D00BE84F4 /* UINavigationController+StatusBar.swift */; };
+		A3A524FE232F138800E6992C /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A524FD232F138800E6992C /* MainTabBarViewController.swift */; };
+		A3A52502232F13EB00E6992C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A52501232F13EB00E6992C /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		A3758A4A23236AB400BE84F4 /* AllowNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowNotificationsViewController.swift; sourceTree = "<group>"; };
 		A3758A4C23236C6B00BE84F4 /* SetupWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupWalletViewController.swift; sourceTree = "<group>"; };
 		A3758A4F2323720D00BE84F4 /* UINavigationController+StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+StatusBar.swift"; sourceTree = "<group>"; };
+		A3A524FD232F138800E6992C /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		A3A52501232F13EB00E6992C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +96,9 @@
 		A31A14CC231E09BE004C6DAE /* VCCESS */ = {
 			isa = PBXGroup;
 			children = (
-				A351A0B8232EEF52002F811A /* Utils */,
 				A31A14E1231E0BBC004C6DAE /* Resources */,
+				A3A52500232F13EB00E6992C /* Model */,
+				A351A0B8232EEF52002F811A /* Utils */,
 				A31A14E4231E0D34004C6DAE /* UI */,
 				A31A14CD231E09BE004C6DAE /* AppDelegate.swift */,
 				A31A14CF231E09BE004C6DAE /* SceneDelegate.swift */,
@@ -117,9 +122,10 @@
 		A31A14E4231E0D34004C6DAE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A3A524FD232F138800E6992C /* MainTabBarViewController.swift */,
+				A3A524FF232F139600E6992C /* Bak */,
 				A34AA5B1232F03820014B65B /* Registration */,
 				A3758A4E232371F800BE84F4 /* Extensions */,
-				A3758A4A23236AB400BE84F4 /* AllowNotificationsViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -127,7 +133,7 @@
 		A34AA5B1232F03820014B65B /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				A31A14E5231E0D4A004C6DAE /* IntroViewController.swift */,
+				A3758A4A23236AB400BE84F4 /* AllowNotificationsViewController.swift */,
 				A351A0C9232EEFDD002F811A /* LinkViewController.swift */,
 				A3758A4623235BE100BE84F4 /* PhoneNumberViewController.swift */,
 				A3758A4C23236C6B00BE84F4 /* SetupWalletViewController.swift */,
@@ -159,6 +165,22 @@
 				A3758A4F2323720D00BE84F4 /* UINavigationController+StatusBar.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A3A524FF232F139600E6992C /* Bak */ = {
+			isa = PBXGroup;
+			children = (
+				A31A14E5231E0D4A004C6DAE /* IntroViewController.swift */,
+			);
+			path = Bak;
+			sourceTree = "<group>";
+		};
+		A3A52500232F13EB00E6992C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3A52501232F13EB00E6992C /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,12 +258,14 @@
 				A3758A502323720D00BE84F4 /* UINavigationController+StatusBar.swift in Sources */,
 				A31A14E8231E12BB004C6DAE /* SignUpTableViewController.swift in Sources */,
 				A31A14D2231E09BE004C6DAE /* ViewController.swift in Sources */,
+				A3A524FE232F138800E6992C /* MainTabBarViewController.swift in Sources */,
 				A3758A492323648200BE84F4 /* VCCESSCodeViewController.swift in Sources */,
 				A3758A4D23236C6B00BE84F4 /* SetupWalletViewController.swift in Sources */,
 				A351A0C1232EEF52002F811A /* ImageService.swift in Sources */,
 				A31A14CE231E09BE004C6DAE /* AppDelegate.swift in Sources */,
 				A31A14D0231E09BE004C6DAE /* SceneDelegate.swift in Sources */,
 				A3758A4723235BE100BE84F4 /* PhoneNumberViewController.swift in Sources */,
+				A3A52502232F13EB00E6992C /* User.swift in Sources */,
 				A351A0C6232EEF52002F811A /* Utils.swift in Sources */,
 				A351A0C4232EEF52002F811A /* KeychainWrapper.swift in Sources */,
 				A31A14E6231E0D4A004C6DAE /* IntroViewController.swift in Sources */,
