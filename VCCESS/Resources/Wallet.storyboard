@@ -27,17 +27,37 @@
             </objects>
             <point key="canvasLocation" x="-575" y="179"/>
         </scene>
-        <!--MEMBER PROFILE-->
+        <!--WALLET-->
         <scene sceneID="MIP-Tn-ASy">
             <objects>
                 <viewController id="jdu-Qx-sfj" customClass="WalletViewController" customModule="VCCESS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qz6-cw-bBt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IxH-Q2-ap8">
+                                <rect key="frame" x="16" y="806" width="382" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WnZ-al-8EI"/>
+                                </constraints>
+                                <state key="normal" title="ADD ADDRESS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bbU-sc-LnW" kind="show" id="rtS-iF-obV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IxH-Q2-ap8" secondAttribute="trailing" constant="16" id="3E7-Yw-Hzy"/>
+                            <constraint firstAttribute="bottom" secondItem="IxH-Q2-ap8" secondAttribute="bottom" constant="50" id="a7Z-wG-tFB"/>
+                            <constraint firstItem="IxH-Q2-ap8" firstAttribute="leading" secondItem="qz6-cw-bBt" secondAttribute="leading" constant="16" id="cAk-vy-Tw3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LQJ-Up-xVT"/>
                     </view>
-                    <navigationItem key="navigationItem" title="MEMBER PROFILE" id="xoK-n5-xrr">
+                    <navigationItem key="navigationItem" title="WALLET" id="xoK-n5-xrr">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="Spw-N5-v1F">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -49,6 +69,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlm-pl-MI3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="312" y="179"/>
+        </scene>
+        <!--SHIPPING ADDRESS-->
+        <scene sceneID="jWJ-bX-fK5">
+            <objects>
+                <viewController id="bbU-sc-LnW" customClass="WalletViewController" customModule="VCCESS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iV5-I0-kFe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLH-Yf-qkh">
+                                <rect key="frame" x="16" y="806" width="382" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DhQ-LV-uB8"/>
+                                </constraints>
+                                <state key="normal" title="SAVE ADDRESS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uLH-Yf-qkh" secondAttribute="bottom" constant="50" id="6uZ-yR-Kb3"/>
+                            <constraint firstItem="uLH-Yf-qkh" firstAttribute="leading" secondItem="iV5-I0-kFe" secondAttribute="leading" constant="16" id="LaV-al-cKX"/>
+                            <constraint firstAttribute="trailing" secondItem="uLH-Yf-qkh" secondAttribute="trailing" constant="16" id="sRU-tG-SQa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bXC-dS-2z1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SHIPPING ADDRESS" id="2GE-q9-SLT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="cMX-Fe-GVC">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="doneWithSender:" destination="bbU-sc-LnW" id="uK4-2N-MjA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7Y-af-Uuh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="179"/>
         </scene>
     </scenes>
 </document>

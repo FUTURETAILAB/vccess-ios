@@ -21,6 +21,8 @@
 		A31A14E6231E0D4A004C6DAE /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14E5231E0D4A004C6DAE /* IntroViewController.swift */; };
 		A31A14E8231E12BB004C6DAE /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14E7231E12BB004C6DAE /* SignUpTableViewController.swift */; };
 		A31A14EA231E12C6004C6DAE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14E9231E12C6004C6DAE /* SignInViewController.swift */; };
+		A32665652330795200DF7362 /* Shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32665642330795200DF7362 /* Shop.storyboard */; };
+		A326656723307A3A00DF7362 /* Bag.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A326656623307A3A00DF7362 /* Bag.storyboard */; };
 		A351A0C1232EEF52002F811A /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351A0B9232EEF52002F811A /* ImageService.swift */; };
 		A351A0C2232EEF52002F811A /* ActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351A0BA232EEF52002F811A /* ActivityManager.swift */; };
 		A351A0C3232EEF52002F811A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351A0BB232EEF52002F811A /* Network.swift */; };
@@ -38,6 +40,8 @@
 		A3A524FE232F138800E6992C /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A524FD232F138800E6992C /* MainTabBarViewController.swift */; };
 		A3A52502232F13EB00E6992C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A52501232F13EB00E6992C /* User.swift */; };
 		A3A52505232F254700E6992C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A52504232F254700E6992C /* Profile.storyboard */; };
+		A3B13B5423307B5B00F8B9EF /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B13B5323307B5B00F8B9EF /* Discover.storyboard */; };
+		A3B13B5623307C2900F8B9EF /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B13B5523307C2900F8B9EF /* Scanner.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,8 @@
 		A31A14E5231E0D4A004C6DAE /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		A31A14E7231E12BB004C6DAE /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
 		A31A14E9231E12C6004C6DAE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		A32665642330795200DF7362 /* Shop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shop.storyboard; sourceTree = "<group>"; };
+		A326656623307A3A00DF7362 /* Bag.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bag.storyboard; sourceTree = "<group>"; };
 		A351A0B9232EEF52002F811A /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		A351A0BA232EEF52002F811A /* ActivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityManager.swift; sourceTree = "<group>"; };
 		A351A0BB232EEF52002F811A /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -74,6 +80,8 @@
 		A3A524FD232F138800E6992C /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		A3A52501232F13EB00E6992C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A3A52504232F254700E6992C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		A3B13B5323307B5B00F8B9EF /* Discover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		A3B13B5523307C2900F8B9EF /* Scanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scanner.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,10 +138,14 @@
 			isa = PBXGroup;
 			children = (
 				A31A14D6231E09C0004C6DAE /* Assets.xcassets */,
+				A326656623307A3A00DF7362 /* Bag.storyboard */,
+				A3B13B5323307B5B00F8B9EF /* Discover.storyboard */,
 				A31A14D8231E09C0004C6DAE /* LaunchScreen.storyboard */,
 				A31A14D3231E09BE004C6DAE /* Main.storyboard */,
 				A3A52504232F254700E6992C /* Profile.storyboard */,
 				A31A14E2231E0BDC004C6DAE /* Registration.storyboard */,
+				A3B13B5523307C2900F8B9EF /* Scanner.storyboard */,
+				A32665642330795200DF7362 /* Shop.storyboard */,
 				A31042E2232F2F34009CA971 /* Wallet.storyboard */,
 			);
 			path = Resources;
@@ -275,9 +287,13 @@
 				A31A14DA231E09C0004C6DAE /* LaunchScreen.storyboard in Resources */,
 				A31A14E3231E0BDC004C6DAE /* Registration.storyboard in Resources */,
 				A3A52505232F254700E6992C /* Profile.storyboard in Resources */,
+				A3B13B5623307C2900F8B9EF /* Scanner.storyboard in Resources */,
 				A31A14D7231E09C0004C6DAE /* Assets.xcassets in Resources */,
+				A32665652330795200DF7362 /* Shop.storyboard in Resources */,
 				A31A14D5231E09BE004C6DAE /* Main.storyboard in Resources */,
 				A31042E3232F2F34009CA971 /* Wallet.storyboard in Resources */,
+				A326656723307A3A00DF7362 /* Bag.storyboard in Resources */,
+				A3B13B5423307B5B00F8B9EF /* Discover.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

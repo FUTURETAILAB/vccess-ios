@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hSO-qD-LLz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="RQQ-8g-76U">
+            <objects>
+                <navigationController storyboardIdentifier="vwShop" id="hSO-qD-LLz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="ShopIconOff" selectedImage="ShopIconOn" id="tcI-Yg-SLi"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dLI-qf-WmV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="F13-bw-9mg" kind="relationship" relationship="rootViewController" id="5zv-bO-3vy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3h-ac-wsf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1776" y="-1232"/>
+        </scene>
+        <!--COLLECTION FEED-->
+        <scene sceneID="vgf-Al-BQV">
+            <objects>
+                <viewController id="F13-bw-9mg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bjT-g9-iqB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4Ze-80-O2v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ShopIconOff" selectedImage="ShopIconOn" id="0dQ-qt-Dfh"/>
+                    <navigationItem key="navigationItem" title="COLLECTION FEED" id="kxS-TZ-a9z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9g-ka-XRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-690" y="-1232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ShopIconOff" width="20" height="20"/>
+        <image name="ShopIconOn" width="20" height="20"/>
+    </resources>
+</document>
