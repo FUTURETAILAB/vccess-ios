@@ -42,6 +42,7 @@
 		A3A52505232F254700E6992C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A52504232F254700E6992C /* Profile.storyboard */; };
 		A3B13B5423307B5B00F8B9EF /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B13B5323307B5B00F8B9EF /* Discover.storyboard */; };
 		A3B13B5623307C2900F8B9EF /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B13B5523307C2900F8B9EF /* Scanner.storyboard */; };
+		A3B13B592330899D00F8B9EF /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B13B582330899D00F8B9EF /* ScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,8 @@
 		A3A52504232F254700E6992C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		A3B13B5323307B5B00F8B9EF /* Discover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		A3B13B5523307C2900F8B9EF /* Scanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scanner.storyboard; sourceTree = "<group>"; };
+		A3B13B582330899D00F8B9EF /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		A3B13B5A233092E900F8B9EF /* VCCESS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VCCESS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,7 @@
 		A31A14CC231E09BE004C6DAE /* VCCESS */ = {
 			isa = PBXGroup;
 			children = (
+				A3B13B5A233092E900F8B9EF /* VCCESS.entitlements */,
 				A31A14E1231E0BBC004C6DAE /* Resources */,
 				A3A52500232F13EB00E6992C /* Model */,
 				A351A0B8232EEF52002F811A /* Utils */,
@@ -154,6 +158,7 @@
 		A31A14E4231E0D34004C6DAE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A3B13B572330898C00F8B9EF /* Scanner */,
 				A31042E4232F3000009CA971 /* Wallet */,
 				A3A524FD232F138800E6992C /* MainTabBarViewController.swift */,
 				A3A524FF232F139600E6992C /* Bak */,
@@ -224,6 +229,14 @@
 				A31042DC232F269B009CA971 /* ProfileCollectionViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		A3B13B572330898C00F8B9EF /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				A3B13B582330899D00F8B9EF /* ScannerViewController.swift */,
+			);
+			path = Scanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +340,7 @@
 				A351A0C5232EEF52002F811A /* UIImage+Utils.swift in Sources */,
 				A351A0C2232EEF52002F811A /* ActivityManager.swift in Sources */,
 				A31A14EA231E12C6004C6DAE /* SignInViewController.swift in Sources */,
+				A3B13B592330899D00F8B9EF /* ScannerViewController.swift in Sources */,
 				A351A0C3232EEF52002F811A /* Network.swift in Sources */,
 				A3758A4B23236AB400BE84F4 /* AllowNotificationsViewController.swift in Sources */,
 			);
@@ -472,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VCCESS/VCCESS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7PLD2N9KF;
 				INFOPLIST_FILE = VCCESS/Info.plist;
@@ -490,6 +505,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VCCESS/VCCESS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7PLD2N9KF;
 				INFOPLIST_FILE = VCCESS/Info.plist;

@@ -11,7 +11,7 @@
         <scene sceneID="rK6-IO-sGy">
             <objects>
                 <navigationController storyboardIdentifier="vwProfile" id="wuO-DF-LD9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="UserIconOff" id="4oy-pK-mgk"/>
+                    <tabBarItem key="tabBarItem" title="" image="UserIconOff" selectedImage="UserIconOn" id="4oy-pK-mgk"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DFg-EX-L0E">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -69,5 +69,6 @@
     </scenes>
     <resources>
         <image name="UserIconOff" width="21" height="20"/>
+        <image name="UserIconOn" width="21" height="20"/>
     </resources>
 </document>

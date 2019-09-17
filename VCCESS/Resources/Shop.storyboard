@@ -36,7 +36,12 @@
                         <viewLayoutGuide key="safeArea" id="4Ze-80-O2v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="ShopIconOff" selectedImage="ShopIconOn" id="0dQ-qt-Dfh"/>
-                    <navigationItem key="navigationItem" title="COLLECTION FEED" id="kxS-TZ-a9z"/>
+                    <navigationItem key="navigationItem" title="COLLECTION FEED" id="kxS-TZ-a9z">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="E79-WS-EgE">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="threeLineBars" id="tlD-aY-Sja"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9g-ka-XRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,5 +51,6 @@
     <resources>
         <image name="ShopIconOff" width="20" height="20"/>
         <image name="ShopIconOn" width="20" height="20"/>
+        <image name="threeLineBars" width="20" height="11"/>
     </resources>
 </document>

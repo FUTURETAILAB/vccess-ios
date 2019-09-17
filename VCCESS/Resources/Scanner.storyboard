@@ -16,6 +16,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f3D-vf-Dk2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="yrb-iL-Xfu" kind="relationship" relationship="rootViewController" id="kvp-kE-82J"/>
@@ -25,17 +26,32 @@
             </objects>
             <point key="canvasLocation" x="-635" y="147"/>
         </scene>
-        <!--View Controller-->
+        <!--Scanner View Controller-->
         <scene sceneID="x8D-aC-jJs">
             <objects>
-                <viewController id="yrb-iL-Xfu" sceneMemberID="viewController">
+                <viewController id="yrb-iL-Xfu" customClass="ScannerViewController" customModule="VCCESS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="llo-Fk-cT4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scan" translatesAutoresizingMaskIntoConstraints="NO" id="HN1-lo-tZv">
+                                <rect key="frame" x="113" y="354" width="188" height="188"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HN1-lo-tZv" firstAttribute="centerY" secondItem="llo-Fk-cT4" secondAttribute="centerY" id="eeM-WA-TGh"/>
+                            <constraint firstItem="HN1-lo-tZv" firstAttribute="centerX" secondItem="llo-Fk-cT4" secondAttribute="centerX" id="kkk-W6-5km"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fal-9u-dYV"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Cl3-Oy-GbF"/>
+                    <navigationItem key="navigationItem" id="Cl3-Oy-GbF">
+                        <barButtonItem key="rightBarButtonItem" image="ArrowBottomDown" id="ay7-lC-ilA">
+                            <connections>
+                                <action selector="closeWithSender:" destination="yrb-iL-Xfu" id="gxD-bk-Rbv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mt-Ta-dl2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,6 +59,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ArrowBottomDown" width="20" height="13"/>
+        <image name="Scan" width="188" height="188"/>
         <image name="VCCESSOff" width="24" height="24"/>
     </resources>
 </document>
