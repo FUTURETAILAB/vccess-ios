@@ -43,6 +43,7 @@
 		A3B13B5423307B5B00F8B9EF /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B13B5323307B5B00F8B9EF /* Discover.storyboard */; };
 		A3B13B5623307C2900F8B9EF /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B13B5523307C2900F8B9EF /* Scanner.storyboard */; };
 		A3B13B592330899D00F8B9EF /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B13B582330899D00F8B9EF /* ScannerViewController.swift */; };
+		A3B13B5C23314C2400F8B9EF /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B13B5B23314C2400F8B9EF /* NFCReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,8 @@
 		A3B13B5523307C2900F8B9EF /* Scanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scanner.storyboard; sourceTree = "<group>"; };
 		A3B13B582330899D00F8B9EF /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		A3B13B5A233092E900F8B9EF /* VCCESS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VCCESS.entitlements; sourceTree = "<group>"; };
+		A3B13B5B23314C2400F8B9EF /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
+		A3B13B5E23314D4B00F8B9EF /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,7 @@
 			children = (
 				A31A14CC231E09BE004C6DAE /* VCCESS */,
 				A31A14CB231E09BE004C6DAE /* Products */,
+				A3B13B5D23314D4B00F8B9EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +198,7 @@
 				A351A0BE232EEF52002F811A /* Utils.swift */,
 				A351A0BF232EEF52002F811A /* Configuration.swift */,
 				A351A0C0232EEF52002F811A /* UIFont+Traits.swift */,
+				A3B13B5B23314C2400F8B9EF /* NFCReader.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -237,6 +242,14 @@
 				A3B13B582330899D00F8B9EF /* ScannerViewController.swift */,
 			);
 			path = Scanner;
+			sourceTree = "<group>";
+		};
+		A3B13B5D23314D4B00F8B9EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3B13B5E23314D4B00F8B9EF /* CoreNFC.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +353,7 @@
 				A351A0C5232EEF52002F811A /* UIImage+Utils.swift in Sources */,
 				A351A0C2232EEF52002F811A /* ActivityManager.swift in Sources */,
 				A31A14EA231E12C6004C6DAE /* SignInViewController.swift in Sources */,
+				A3B13B5C23314C2400F8B9EF /* NFCReader.swift in Sources */,
 				A3B13B592330899D00F8B9EF /* ScannerViewController.swift in Sources */,
 				A351A0C3232EEF52002F811A /* Network.swift in Sources */,
 				A3758A4B23236AB400BE84F4 /* AllowNotificationsViewController.swift in Sources */,
