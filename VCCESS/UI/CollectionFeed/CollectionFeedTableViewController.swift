@@ -15,6 +15,17 @@ class CollectionFeedTableViewController: UITableViewController
     {
         super.viewDidLoad()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        super.prepare(for: segue, sender: sender)
+        
+        if let vc = segue.destination as? CollectionItemDetailTableViewController
+            , let item = sender as? CollectionItem
+        {
+            vc.collectionItem = item
+        }
+    }
 
     // MARK: - Table view data source
 
@@ -66,6 +77,21 @@ class CollectionFeedTableViewController: UITableViewController
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard CollectionItem.shared.testData().count > indexPath.row
+        else
+        {
+            return()
+        }
+        
+        let item = CollectionItem.shared.testData()[indexPath.row]
+        
+        self.performSegue(withIdentifier: "sgCollectionItemDetail", sender: item)
+    }
 }
 
 extension CollectionFeedTableViewController: CollectionFeedTableViewCellDelegate
@@ -77,6 +103,14 @@ extension CollectionFeedTableViewController: CollectionFeedTableViewCellDelegate
     
     func share(item: CollectionItem)
     {
+        var items: [Any] = []
         
+        if let value = item.brand { items.append(value) }
+        if let value = item.title { items.append(value) }
+        if let value = item.description { items.append(value) }
+        if let value = item.image { items.append(value) }
+
+        let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        present(ac, animated: true)
     }
 }

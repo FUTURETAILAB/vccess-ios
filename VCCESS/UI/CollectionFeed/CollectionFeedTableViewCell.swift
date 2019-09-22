@@ -36,7 +36,6 @@ class CollectionFeedTableViewCell: UITableViewCell
     override func awakeFromNib()
     {
         super.awakeFromNib()
-        // Initialization code
         
         btnNotify.layer.borderColor = UIColor(displayP3Red: 138.0/255.0, green: 138.0/255.0, blue: 138.0/255.0, alpha: 1.0).cgColor
         btnNotify.layer.borderWidth = 1.0
@@ -55,6 +54,7 @@ class CollectionFeedTableViewCell: UITableViewCell
         self.imgViewItem.image = item.image
         self.lblTitle.text = item.title
         self.lblDescription.text = item.description
+        self.btnFavorite.isSelected = item.isFavorite
     }
 
     @IBAction func qfTag(sender: UIButton)
@@ -81,7 +81,11 @@ class CollectionFeedTableViewCell: UITableViewCell
     
     @IBAction func favorite(sender: UIButton)
     {
-        
+        if let item = self.collectionItem
+        {
+            self.collectionItem?.isFavorite = !item.isFavorite
+            sender.isSelected = item.isFavorite
+        }
     }
 
 }

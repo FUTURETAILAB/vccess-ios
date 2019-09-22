@@ -14,6 +14,7 @@
 		A31A06952337EFE10024BDEF /* CollectionFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A06942337EFE10024BDEF /* CollectionFeedTableViewController.swift */; };
 		A31A069B2337F17F0024BDEF /* CollectionFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A069A2337F17F0024BDEF /* CollectionFeedTableViewCell.swift */; };
 		A31A069D2337F1FD0024BDEF /* CollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A069C2337F1FD0024BDEF /* CollectionItem.swift */; };
+		A31A069F233810E10024BDEF /* CollectionItemDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A069E233810E10024BDEF /* CollectionItemDetailTableViewController.swift */; };
 		A31A14CE231E09BE004C6DAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14CD231E09BE004C6DAE /* AppDelegate.swift */; };
 		A31A14D0231E09BE004C6DAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14CF231E09BE004C6DAE /* SceneDelegate.swift */; };
 		A31A14D5231E09BE004C6DAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31A14D3231E09BE004C6DAE /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		A31A06942337EFE10024BDEF /* CollectionFeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFeedTableViewController.swift; sourceTree = "<group>"; };
 		A31A069A2337F17F0024BDEF /* CollectionFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFeedTableViewCell.swift; sourceTree = "<group>"; };
 		A31A069C2337F1FD0024BDEF /* CollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItem.swift; sourceTree = "<group>"; };
+		A31A069E233810E10024BDEF /* CollectionItemDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItemDetailTableViewController.swift; sourceTree = "<group>"; };
 		A31A14CA231E09BE004C6DAE /* VCCESS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCCESS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31A14CD231E09BE004C6DAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A31A14CF231E09BE004C6DAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				A31A06942337EFE10024BDEF /* CollectionFeedTableViewController.swift */,
 				A31A069A2337F17F0024BDEF /* CollectionFeedTableViewCell.swift */,
+				A31A069E233810E10024BDEF /* CollectionItemDetailTableViewController.swift */,
 			);
 			path = CollectionFeed;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				A351A0C2232EEF52002F811A /* ActivityManager.swift in Sources */,
 				A31A069D2337F1FD0024BDEF /* CollectionItem.swift in Sources */,
 				A31A14EA231E12C6004C6DAE /* SignInViewController.swift in Sources */,
+				A31A069F233810E10024BDEF /* CollectionItemDetailTableViewController.swift in Sources */,
 				A3B13B5C23314C2400F8B9EF /* NFCReader.swift in Sources */,
 				A3B13B592330899D00F8B9EF /* ScannerViewController.swift in Sources */,
 				A351A0C3232EEF52002F811A /* Network.swift in Sources */,
