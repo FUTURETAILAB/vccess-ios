@@ -26,6 +26,18 @@ class CollectionFeedTableViewController: UITableViewController
             vc.collectionItem = item
         }
     }
+    
+    @IBAction func filter(sender: UIButton)
+    {}
+    
+    @IBAction func favorite(sender: UIButton)
+    {}
+    
+    @IBAction func search(sender: UIBarButtonItem)
+    {}
+    
+    @IBAction func toggleList(sender: UIBarButtonItem)
+    {}
 
     // MARK: - Table view data source
 

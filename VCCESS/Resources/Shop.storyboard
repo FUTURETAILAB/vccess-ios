@@ -32,9 +32,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="tCI-8g-WB3">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="le8-K3-aLV">
+                                    <rect key="frame" x="0.0" y="11" width="414" height="22"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yu-1v-LE3">
+                                            <rect key="frame" x="0.0" y="0.0" width="207" height="22"/>
+                                            <state key="normal" image="HeartIcon.Off"/>
+                                            <connections>
+                                                <action selector="favoriteWithSender:" destination="0A9-1W-wO8" eventType="touchUpInside" id="5XJ-ux-m4Q"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJK-Fb-6dM">
+                                            <rect key="frame" x="207" y="0.0" width="207" height="22"/>
+                                            <state key="normal" image="Filter"/>
+                                            <connections>
+                                                <action selector="filterWithSender:" destination="0A9-1W-wO8" eventType="touchUpInside" id="MCp-Ha-W6d"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="le8-K3-aLV" secondAttribute="trailing" id="3nr-Cf-Mjh"/>
+                                <constraint firstItem="le8-K3-aLV" firstAttribute="leading" secondItem="tCI-8g-WB3" secondAttribute="leading" id="bUu-Md-T63"/>
+                                <constraint firstItem="le8-K3-aLV" firstAttribute="centerY" secondItem="tCI-8g-WB3" secondAttribute="centerY" id="x02-XM-XWG"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="collectionFeedReuseIdentifier" rowHeight="300" id="7Oz-z8-7T5" customClass="CollectionFeedTableViewCell" customModule="VCCESS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Oz-z8-7T5" id="BEA-Fp-yXV">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
@@ -125,8 +156,15 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="Oie-PT-I6o"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="search" id="PdM-gX-zBU">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="searchWithSender:" destination="0A9-1W-wO8" id="sBY-Kd-KRV"/>
+                            </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="threeLineBars" id="RKX-fP-bU4"/>
+                        <barButtonItem key="rightBarButtonItem" image="threeLineBars" id="RKX-fP-bU4">
+                            <connections>
+                                <action selector="toggleListWithSender:" destination="0A9-1W-wO8" id="xBH-Vb-G8x"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="rVh-52-rjW" kind="show" identifier="sgCollectionItemDetail" id="lh5-uU-jns"/>
@@ -274,6 +312,8 @@
     <resources>
         <image name="FavoriteIcon.Off" width="20" height="18"/>
         <image name="FavoriteIcon.On" width="20" height="18"/>
+        <image name="Filter" width="23" height="17"/>
+        <image name="HeartIcon.Off" width="16" height="15"/>
         <image name="ShareIcon.Off" width="21" height="18"/>
         <image name="ShopIconOff" width="20" height="20"/>
         <image name="ShopIconOn" width="20" height="20"/>

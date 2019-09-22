@@ -15,6 +15,8 @@
 		A31A069B2337F17F0024BDEF /* CollectionFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A069A2337F17F0024BDEF /* CollectionFeedTableViewCell.swift */; };
 		A31A069D2337F1FD0024BDEF /* CollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A069C2337F1FD0024BDEF /* CollectionItem.swift */; };
 		A31A069F233810E10024BDEF /* CollectionItemDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A069E233810E10024BDEF /* CollectionItemDetailTableViewController.swift */; };
+		A31A06A22338311F0024BDEF /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A06A12338311F0024BDEF /* DiscoverTableViewController.swift */; };
+		A31A06A4233832590024BDEF /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A06A3233832590024BDEF /* DiscoverTableViewCell.swift */; };
 		A31A14CE231E09BE004C6DAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14CD231E09BE004C6DAE /* AppDelegate.swift */; };
 		A31A14D0231E09BE004C6DAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14CF231E09BE004C6DAE /* SceneDelegate.swift */; };
 		A31A14D5231E09BE004C6DAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31A14D3231E09BE004C6DAE /* Main.storyboard */; };
@@ -58,6 +60,8 @@
 		A31A069A2337F17F0024BDEF /* CollectionFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFeedTableViewCell.swift; sourceTree = "<group>"; };
 		A31A069C2337F1FD0024BDEF /* CollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItem.swift; sourceTree = "<group>"; };
 		A31A069E233810E10024BDEF /* CollectionItemDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItemDetailTableViewController.swift; sourceTree = "<group>"; };
+		A31A06A12338311F0024BDEF /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		A31A06A3233832590024BDEF /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
 		A31A14CA231E09BE004C6DAE /* VCCESS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCCESS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31A14CD231E09BE004C6DAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A31A14CF231E09BE004C6DAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +129,15 @@
 			path = CollectionFeed;
 			sourceTree = "<group>";
 		};
+		A31A06A0233830D90024BDEF /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				A31A06A12338311F0024BDEF /* DiscoverTableViewController.swift */,
+				A31A06A3233832590024BDEF /* DiscoverTableViewCell.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
 		A31A14C1231E09BE004C6DAE = {
 			isa = PBXGroup;
 			children = (
@@ -177,13 +190,13 @@
 		A31A14E4231E0D34004C6DAE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A3A524FF232F139600E6992C /* Bak */,
 				A31A06932337EFC60024BDEF /* CollectionFeed */,
+				A3758A4E232371F800BE84F4 /* Extensions */,
+				A31A06A0233830D90024BDEF /* Discover */,
+				A3A52503232F24E800E6992C /* Profile */,
 				A3B13B572330898C00F8B9EF /* Scanner */,
 				A31042E4232F3000009CA971 /* Wallet */,
-				A3A524FD232F138800E6992C /* MainTabBarViewController.swift */,
-				A3A524FF232F139600E6992C /* Bak */,
-				A3758A4E232371F800BE84F4 /* Extensions */,
-				A3A52503232F24E800E6992C /* Profile */,
 				A34AA5B1232F03820014B65B /* Registration */,
 			);
 			path = UI;
@@ -222,6 +235,7 @@
 		A3758A4E232371F800BE84F4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A3A524FD232F138800E6992C /* MainTabBarViewController.swift */,
 				A3758A4F2323720D00BE84F4 /* UINavigationController+StatusBar.swift */,
 			);
 			path = Extensions;
@@ -357,6 +371,7 @@
 				A31A14CE231E09BE004C6DAE /* AppDelegate.swift in Sources */,
 				A31A14D0231E09BE004C6DAE /* SceneDelegate.swift in Sources */,
 				A31A06952337EFE10024BDEF /* CollectionFeedTableViewController.swift in Sources */,
+				A31A06A22338311F0024BDEF /* DiscoverTableViewController.swift in Sources */,
 				A31042E6232F3030009CA971 /* WalletViewController.swift in Sources */,
 				A3758A4723235BE100BE84F4 /* PhoneNumberViewController.swift in Sources */,
 				A3A52502232F13EB00E6992C /* User.swift in Sources */,
@@ -370,6 +385,7 @@
 				A31042DD232F269B009CA971 /* ProfileCollectionViewController.swift in Sources */,
 				A351A0C5232EEF52002F811A /* UIImage+Utils.swift in Sources */,
 				A351A0C2232EEF52002F811A /* ActivityManager.swift in Sources */,
+				A31A06A4233832590024BDEF /* DiscoverTableViewCell.swift in Sources */,
 				A31A069D2337F1FD0024BDEF /* CollectionItem.swift in Sources */,
 				A31A14EA231E12C6004C6DAE /* SignInViewController.swift in Sources */,
 				A31A069F233810E10024BDEF /* CollectionItemDetailTableViewController.swift in Sources */,

@@ -83,6 +83,11 @@ class CollectionItem
         i3.imagePath = "Bearbrick"
         items.append(i3)
 
+        let i4: CollectionItem = CollectionItem()
+        i4.brand = "Kaws"
+        i4.title = "Holiday Japan"
+        i4.imagePath = "KAWS-Holiday-Japan-2"
+        items.append(i4)
         
         return items
     }
