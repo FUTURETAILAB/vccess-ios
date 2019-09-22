@@ -20,7 +20,7 @@ class NFCReader: NSObject
     func start()
     {
         sessionNDEF = NFCNDEFReaderSession(delegate: self, queue: nil, invalidateAfterFirstRead: false)
-        sessionNDEF?.alertMessage = "To unlock and authenticate collectible, place your phone on the VCCESS TAG symbol."
+        sessionNDEF?.alertMessage = "To unlock and authenticate, place your phone on the VCCESS TAG."
         sessionNDEF?.begin()
     }
 }

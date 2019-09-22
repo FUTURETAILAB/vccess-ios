@@ -11,9 +11,11 @@
 		A31042E1232F2A61009CA971 /* Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31042E0232F2A61009CA971 /* Push.swift */; };
 		A31042E3232F2F34009CA971 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31042E2232F2F34009CA971 /* Wallet.storyboard */; };
 		A31042E6232F3030009CA971 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31042E5232F3030009CA971 /* WalletViewController.swift */; };
+		A31A06952337EFE10024BDEF /* CollectionFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A06942337EFE10024BDEF /* CollectionFeedTableViewController.swift */; };
+		A31A069B2337F17F0024BDEF /* CollectionFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A069A2337F17F0024BDEF /* CollectionFeedTableViewCell.swift */; };
+		A31A069D2337F1FD0024BDEF /* CollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A069C2337F1FD0024BDEF /* CollectionItem.swift */; };
 		A31A14CE231E09BE004C6DAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14CD231E09BE004C6DAE /* AppDelegate.swift */; };
 		A31A14D0231E09BE004C6DAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14CF231E09BE004C6DAE /* SceneDelegate.swift */; };
-		A31A14D2231E09BE004C6DAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A14D1231E09BE004C6DAE /* ViewController.swift */; };
 		A31A14D5231E09BE004C6DAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31A14D3231E09BE004C6DAE /* Main.storyboard */; };
 		A31A14D7231E09C0004C6DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31A14D6231E09C0004C6DAE /* Assets.xcassets */; };
 		A31A14DA231E09C0004C6DAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31A14D8231E09C0004C6DAE /* LaunchScreen.storyboard */; };
@@ -51,10 +53,12 @@
 		A31042E0232F2A61009CA971 /* Push.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Push.swift; sourceTree = "<group>"; };
 		A31042E2232F2F34009CA971 /* Wallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
 		A31042E5232F3030009CA971 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		A31A06942337EFE10024BDEF /* CollectionFeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFeedTableViewController.swift; sourceTree = "<group>"; };
+		A31A069A2337F17F0024BDEF /* CollectionFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFeedTableViewCell.swift; sourceTree = "<group>"; };
+		A31A069C2337F1FD0024BDEF /* CollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItem.swift; sourceTree = "<group>"; };
 		A31A14CA231E09BE004C6DAE /* VCCESS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCCESS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31A14CD231E09BE004C6DAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A31A14CF231E09BE004C6DAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A31A14D1231E09BE004C6DAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A31A14D4231E09BE004C6DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A31A14D6231E09C0004C6DAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A31A14D9231E09C0004C6DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -109,6 +113,15 @@
 			path = Wallet;
 			sourceTree = "<group>";
 		};
+		A31A06932337EFC60024BDEF /* CollectionFeed */ = {
+			isa = PBXGroup;
+			children = (
+				A31A06942337EFE10024BDEF /* CollectionFeedTableViewController.swift */,
+				A31A069A2337F17F0024BDEF /* CollectionFeedTableViewCell.swift */,
+			);
+			path = CollectionFeed;
+			sourceTree = "<group>";
+		};
 		A31A14C1231E09BE004C6DAE = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +149,6 @@
 				A31A14E4231E0D34004C6DAE /* UI */,
 				A31A14CD231E09BE004C6DAE /* AppDelegate.swift */,
 				A31A14CF231E09BE004C6DAE /* SceneDelegate.swift */,
-				A31A14D1231E09BE004C6DAE /* ViewController.swift */,
 				A31A14DB231E09C0004C6DAE /* Info.plist */,
 			);
 			path = VCCESS;
@@ -162,6 +174,7 @@
 		A31A14E4231E0D34004C6DAE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A31A06932337EFC60024BDEF /* CollectionFeed */,
 				A3B13B572330898C00F8B9EF /* Scanner */,
 				A31042E4232F3000009CA971 /* Wallet */,
 				A3A524FD232F138800E6992C /* MainTabBarViewController.swift */,
@@ -190,15 +203,15 @@
 		A351A0B8232EEF52002F811A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				A351A0B9232EEF52002F811A /* ImageService.swift */,
 				A351A0BA232EEF52002F811A /* ActivityManager.swift */,
-				A351A0BB232EEF52002F811A /* Network.swift */,
+				A351A0BF232EEF52002F811A /* Configuration.swift */,
+				A351A0B9232EEF52002F811A /* ImageService.swift */,
 				A351A0BC232EEF52002F811A /* KeychainWrapper.swift */,
+				A351A0BB232EEF52002F811A /* Network.swift */,
+				A3B13B5B23314C2400F8B9EF /* NFCReader.swift */,
+				A351A0C0232EEF52002F811A /* UIFont+Traits.swift */,
 				A351A0BD232EEF52002F811A /* UIImage+Utils.swift */,
 				A351A0BE232EEF52002F811A /* Utils.swift */,
-				A351A0BF232EEF52002F811A /* Configuration.swift */,
-				A351A0C0232EEF52002F811A /* UIFont+Traits.swift */,
-				A3B13B5B23314C2400F8B9EF /* NFCReader.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -222,6 +235,7 @@
 		A3A52500232F13EB00E6992C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A31A069C2337F1FD0024BDEF /* CollectionItem.swift */,
 				A31042E0232F2A61009CA971 /* Push.swift */,
 				A3A52501232F13EB00E6992C /* User.swift */,
 			);
@@ -331,14 +345,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3758A502323720D00BE84F4 /* UINavigationController+StatusBar.swift in Sources */,
+				A31A069B2337F17F0024BDEF /* CollectionFeedTableViewCell.swift in Sources */,
 				A31A14E8231E12BB004C6DAE /* SignUpTableViewController.swift in Sources */,
-				A31A14D2231E09BE004C6DAE /* ViewController.swift in Sources */,
 				A3A524FE232F138800E6992C /* MainTabBarViewController.swift in Sources */,
 				A3758A492323648200BE84F4 /* VCCESSCodeViewController.swift in Sources */,
 				A3758A4D23236C6B00BE84F4 /* SetupWalletViewController.swift in Sources */,
 				A351A0C1232EEF52002F811A /* ImageService.swift in Sources */,
 				A31A14CE231E09BE004C6DAE /* AppDelegate.swift in Sources */,
 				A31A14D0231E09BE004C6DAE /* SceneDelegate.swift in Sources */,
+				A31A06952337EFE10024BDEF /* CollectionFeedTableViewController.swift in Sources */,
 				A31042E6232F3030009CA971 /* WalletViewController.swift in Sources */,
 				A3758A4723235BE100BE84F4 /* PhoneNumberViewController.swift in Sources */,
 				A3A52502232F13EB00E6992C /* User.swift in Sources */,
@@ -352,6 +367,7 @@
 				A31042DD232F269B009CA971 /* ProfileCollectionViewController.swift in Sources */,
 				A351A0C5232EEF52002F811A /* UIImage+Utils.swift in Sources */,
 				A351A0C2232EEF52002F811A /* ActivityManager.swift in Sources */,
+				A31A069D2337F1FD0024BDEF /* CollectionItem.swift in Sources */,
 				A31A14EA231E12C6004C6DAE /* SignInViewController.swift in Sources */,
 				A3B13B5C23314C2400F8B9EF /* NFCReader.swift in Sources */,
 				A3B13B592330899D00F8B9EF /* ScannerViewController.swift in Sources */,
