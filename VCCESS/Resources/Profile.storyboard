@@ -33,22 +33,124 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="19G-pQ-J9V">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="zVi-1o-Gfu">
                             <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="170"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qTM-uD-IUZ">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="itemReuseIdentifier" id="qTM-uD-IUZ" customClass="ItemCollectionViewCell" customModule="VCCESS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="170" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Sm8-UN-ZTy">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gnX-xy-Ltt">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="gnX-xy-Ltt" firstAttribute="top" secondItem="Sm8-UN-ZTy" secondAttribute="top" id="9yE-09-rnc"/>
+                                        <constraint firstAttribute="bottom" secondItem="gnX-xy-Ltt" secondAttribute="bottom" id="UnC-I4-lLe"/>
+                                        <constraint firstAttribute="trailing" secondItem="gnX-xy-Ltt" secondAttribute="trailing" id="fNK-eO-WaF"/>
+                                        <constraint firstItem="gnX-xy-Ltt" firstAttribute="leading" secondItem="Sm8-UN-ZTy" secondAttribute="leading" id="guS-8U-NKZ"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="imgView" destination="gnX-xy-Ltt" id="EZi-nd-uXU"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="profileHeaderReuseIdentifier" id="Y5x-fX-UEs" customClass="ProfileHeaderReusableView" customModule="VCCESS" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t9w-DD-a5X">
+                                    <rect key="frame" x="18" y="42.5" width="85" height="85"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="t9w-DD-a5X" secondAttribute="height" multiplier="1:1" id="iJE-iS-TY5"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="btO-PO-je8">
+                                    <rect key="frame" x="127" y="39" width="178" height="92.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AJ Anderson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ye-sh-jXO">
+                                            <rect key="frame" x="0.0" y="0.0" width="83.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EKV-ij-Uj4">
+                                            <rect key="frame" x="0.0" y="24.5" width="167.5" height="16.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VCCESS Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfM-PL-mQI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="82.5" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black Platinum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMW-oh-j93">
+                                                    <rect key="frame" x="87.5" y="0.0" width="80" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Los Angeles, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98t-b1-IYa">
+                                            <rect key="frame" x="0.0" y="46" width="163" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nS5-vW-YJy">
+                                            <rect key="frame" x="0.0" y="70.5" width="178" height="22"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0F-yW-VvE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="81" height="22"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                                                    <inset key="contentEdgeInsets" minX="8" minY="4" maxX="8" maxY="4"/>
+                                                    <state key="normal" title="VCCESS PASS">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="passWithSender:" destination="Y5x-fX-UEs" eventType="touchUpInside" id="Qj5-Ac-gir"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQD-Ea-L7W">
+                                                    <rect key="frame" x="97" y="0.0" width="81" height="22"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                                                    <inset key="contentEdgeInsets" minX="8" minY="4" maxX="8" maxY="4"/>
+                                                    <state key="normal" title="EDIT PROFILE">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="editProfileWithSender:" destination="Y5x-fX-UEs" eventType="touchUpInside" id="XMQ-ee-S5S"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="t9w-DD-a5X" firstAttribute="height" secondItem="Y5x-fX-UEs" secondAttribute="height" multiplier="0.5" id="4mD-Li-BDi"/>
+                                <constraint firstItem="t9w-DD-a5X" firstAttribute="centerY" secondItem="Y5x-fX-UEs" secondAttribute="centerY" id="IOD-DS-uB8"/>
+                                <constraint firstItem="btO-PO-je8" firstAttribute="leading" secondItem="t9w-DD-a5X" secondAttribute="trailing" constant="24" id="OAC-G2-MPD"/>
+                                <constraint firstItem="t9w-DD-a5X" firstAttribute="leading" secondItem="Y5x-fX-UEs" secondAttribute="leadingMargin" constant="10" id="WXH-0u-dse"/>
+                                <constraint firstItem="btO-PO-je8" firstAttribute="centerY" secondItem="Y5x-fX-UEs" secondAttribute="centerY" id="tpT-6N-WuV"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="btnEdit" destination="MQD-Ea-L7W" id="xsp-BB-9tn"/>
+                                <outlet property="btnPass" destination="l0F-yW-VvE" id="afz-pa-HE4"/>
+                                <outlet property="imgView" destination="t9w-DD-a5X" id="tjA-5x-fUt"/>
+                                <outlet property="lblLocation" destination="98t-b1-IYa" id="8lu-hv-fgx"/>
+                                <outlet property="lblName" destination="8ye-sh-jXO" id="Clm-2s-Rh1"/>
+                                <outlet property="lblStatus" destination="QMW-oh-j93" id="hJO-Kj-WOC"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="vyq-CL-Jti" id="3Kl-gt-4GT"/>
                             <outlet property="delegate" destination="vyq-CL-Jti" id="F3p-Iz-hib"/>
@@ -64,7 +166,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EqP-iy-e8s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304" y="194"/>
+            <point key="canvasLocation" x="302.89855072463769" y="193.52678571428569"/>
         </scene>
     </scenes>
     <resources>

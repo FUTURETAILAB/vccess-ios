@@ -88,7 +88,47 @@ class CollectionItem
         i4.title = "Holiday Japan"
         i4.imagePath = "KAWS-Holiday-Japan-2"
         items.append(i4)
-        
+
+        let i5: CollectionItem = CollectionItem()
+        i5.imagePath = "backpack"
+        items.append(i5)
+
+        let i6: CollectionItem = CollectionItem()
+        i6.imagePath = "bag"
+        items.append(i6)
+
+        let i7: CollectionItem = CollectionItem()
+        i7.imagePath = "blueShoe"
+        items.append(i7)
+
+        let i8: CollectionItem = CollectionItem()
+        i8.imagePath = "hoodie"
+        items.append(i8)
+
+        let i9: CollectionItem = CollectionItem()
+        i9.imagePath = "img01"
+        items.append(i9)
+
+        let i10: CollectionItem = CollectionItem()
+        i10.imagePath = "jacket"
+        items.append(i10)
+
+        let i11: CollectionItem = CollectionItem()
+        i11.imagePath = "mamaBear"
+        items.append(i11)
+
+        let i12: CollectionItem = CollectionItem()
+        i12.imagePath = "shirt"
+        items.append(i12)
+
+        let i13: CollectionItem = CollectionItem()
+        i13.imagePath = "shoes"
+        items.append(i13)
+
+        let i14: CollectionItem = CollectionItem()
+        i14.imagePath = "sweatshirt"
+        items.append(i14)
+
         return items
     }
 }
