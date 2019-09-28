@@ -51,6 +51,7 @@
 		A3B13B5623307C2900F8B9EF /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B13B5523307C2900F8B9EF /* Scanner.storyboard */; };
 		A3B13B592330899D00F8B9EF /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B13B582330899D00F8B9EF /* ScannerViewController.swift */; };
 		A3B13B5C23314C2400F8B9EF /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B13B5B23314C2400F8B9EF /* NFCReader.swift */; };
+		A3B5DBA4233FDD8D00569F4E /* AddPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5DBA3233FDD8D00569F4E /* AddPaymentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,7 @@
 		A3B13B5A233092E900F8B9EF /* VCCESS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VCCESS.entitlements; sourceTree = "<group>"; };
 		A3B13B5B23314C2400F8B9EF /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
 		A3B13B5E23314D4B00F8B9EF /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
+		A3B5DBA3233FDD8D00569F4E /* AddPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		A31042E4232F3000009CA971 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				A3B5DBA3233FDD8D00569F4E /* AddPaymentViewController.swift */,
 				A31042E5232F3030009CA971 /* WalletViewController.swift */,
 			);
 			path = Wallet;
@@ -394,6 +397,7 @@
 				A351A0C4232EEF52002F811A /* KeychainWrapper.swift in Sources */,
 				A31042E1232F2A61009CA971 /* Push.swift in Sources */,
 				A31A14E6231E0D4A004C6DAE /* IntroViewController.swift in Sources */,
+				A3B5DBA4233FDD8D00569F4E /* AddPaymentViewController.swift in Sources */,
 				A351A0CA232EEFDD002F811A /* LinkViewController.swift in Sources */,
 				A351A0C8232EEF52002F811A /* UIFont+Traits.swift in Sources */,
 				A351A0C7232EEF52002F811A /* Configuration.swift in Sources */,

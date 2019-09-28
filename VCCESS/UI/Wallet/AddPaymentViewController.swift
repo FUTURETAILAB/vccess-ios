@@ -1,25 +1,25 @@
 //
-//  WalletViewController.swift
+//  AddPaymentViewController.swift
 //  VCCESS
 //
-//  Created by Todd Mathison on 9/15/19.
+//  Created by Todd Mathison on 9/28/19.
 //  Copyright © 2019 Todd Mathison. All rights reserved.
 //
 
 import UIKit
 
-class WalletViewController: UIViewController
+class AddPaymentViewController: UIViewController
 {
+    @IBOutlet weak var txtCardNumber: UITextField!
+    @IBOutlet weak var txtDate: UITextField!
+    @IBOutlet weak var txtCVV: UITextField!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle
-    {
-        return .lightContent
-    }
-
     @IBAction func done(sender: UIButton)
     {
         if let nav = self.navigationController
@@ -32,4 +32,13 @@ class WalletViewController: UIViewController
         }
     }
     
+    @IBAction func autoScan(sender: UIButton)
+    {
+        
+    }
+    
+    @IBAction func addCard(sender: UIButton)
+    {
+        
+    }
 }
