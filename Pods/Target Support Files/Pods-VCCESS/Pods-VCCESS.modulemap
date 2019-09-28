@@ -1,0 +1,6 @@
+framework module Pods_VCCESS {
+  umbrella header "Pods-VCCESS-umbrella.h"
+
+  export *
+  module * { export * }
+}

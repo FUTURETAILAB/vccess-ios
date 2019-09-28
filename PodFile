@@ -1,0 +1,7 @@
+target 'VCCESS' do
+  use_frameworks!
+
+	pod 'CardIO'
+
+end
+
